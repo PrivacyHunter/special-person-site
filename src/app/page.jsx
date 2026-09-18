@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react';
-import { motion, AnimatePresence} from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import IntroScreen from '@/components/screens/IntroScreen';
 import ReasonScreen from '@/components/screens/ReasonScreen';
 import LetterScreen from '@/components/screens/LetterScreen';
@@ -20,16 +20,6 @@ export default function SpecialPersonApp() {
         {currentScreen === 3 && <OutroScreen key="outro" onReset={() => setCurrentScreen(0)} />}
       </AnimatePresence>
 
-      {/* Watermark */}
-      <motion.div
-        initial={{ x: 50, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{
-          duration: 0.8,
-        }}
-        className="fixed bottom-4 right-4 text-sm text-black/50 pointer-events-none z-50 font-light">
-        anujbuilds.in
-      </motion.div>
     </div>
   );
 }
