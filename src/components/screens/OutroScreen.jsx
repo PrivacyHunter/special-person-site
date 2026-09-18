@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { RotateCcwIcon } from "lucide-react";
 
 const HeartIcon = ({ className }) => (
@@ -8,7 +8,6 @@ const HeartIcon = ({ className }) => (
 );
 
 function OutroScreen({ onReset }) {
-
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -17,9 +16,7 @@ function OutroScreen({ onReset }) {
             className="flex flex-col items-center justify-center z-10 text-center max-w-md border-4 border-border bg-[#D7FFAE] rounded-4xl p-3 will-change-transform"
         >
             <div className="flex flex-col items-center justify-center border-4 border-border rounded-3xl px-6 py-8 bg-white">
-                <motion.div
-                    className="mb-8 mt-4 relative"
-                >
+                <motion.div className="mb-8 mt-4 relative">
                     <div className="w-36 h-36 bg-white rounded-full border-8 border-[#FFE29C] shadow-[0px_0px_0px_10px_#FFF8E7] flex items-center justify-center z-10 relative">
                         <HeartIcon className="w-20 h-20 text-[#FF1493]" />
                     </div>
@@ -46,4 +43,4 @@ function OutroScreen({ onReset }) {
     );
 }
 
-export default OutroScreen
+export default OutroScreen;
